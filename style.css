@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.centered-content {
+    position: relative;
+}
+
+.centered-image {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    background-color: transparent;
+}
+
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('FONDO.jpg'); /* Cambia la ruta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #990F02; /* Fallback color in case the image doesn't load or cover the entire page */
+    color: white; /* Color del texto para que sea visible en el fondo */
+}
+
+
+.hidden-text {
+    display: none;
+    font-size: 28px; /* Cambia el tamaño del texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia la fuente */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #990F02;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
